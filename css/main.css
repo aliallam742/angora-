@@ -1,0 +1,332 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.navbar-brand{
+    width: 50% !important;
+}
+.navs { 
+    border-bottom: 1px solid rgba(255, 255, 255, 0.5);
+    position:fixed;
+    top: 0;
+    left: 0;
+    z-index: 999999;
+}
+#home{
+    background-image: url(../images/slideshow-1.jpg);
+    height: 100vh;
+    background-size: cover;
+    animation-name:background-change ;
+    animation-duration:33s;
+    animation-iteration-count: infinite;
+}
+.nav-item .nav-link{
+    color: #FFF !important;
+    transition: all 1s;
+}
+.nav-item .nav-link:hover{
+    color: #EE5354 !important;
+}
+.icone li {
+    color: #FFF;
+    transition: all 0.5s;
+}
+.icone li:hover{
+    color: #EE5354 !important;
+}
+.home-text h2{
+    font-size: 60px;
+}
+.setting{
+    position: fixed;
+    width:40px;
+    top: 150px;
+    left: 0;
+    height:40px;
+    background-color: rgba(0,0,0,.7);
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    cursor: pointer;
+}
+.setting i {
+    font-size: 18px;
+    color: #FFF;
+}
+.head {
+    padding: 45px 0;
+    text-align: center;
+    position: relative;
+
+}
+.head h2 {
+    font-size: 80px;
+    opacity: .1;
+    position: relative;
+}
+.head h3 { 
+    position: absolute;
+    font-size: 40px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+.head h2::after{
+    content: "";
+    position: absolute;
+    width: 50px;
+    top:100%;
+    left: 50%;
+    transform: translateX(-50%);
+    height: 1px;
+    background-color: #000 !important;
+    transition: width 2s;
+}
+.progress{
+    height: 8px;
+}
+.team-text{
+    text-align: center;
+}.team-icon-img{
+    position: relative;
+}
+.team-img {
+    overflow: hidden;
+}
+.team-img img{
+    width:100%;
+    transition: all .5s;
+}
+.team-text:hover > .team-icon-img .team-img img{
+    transform: scale(1.2,1.2);
+}
+.team-text h3 {
+    font-size: 20px;
+    transition: all .8s;
+
+}
+.team-text:hover h3{
+    color: #F25454;
+}
+.team-icone{
+    background-color: rgba(245, 2, 2, 0.6);
+    display: flex;
+    width: 100%;
+    height: 100%;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    top: 0;
+    left: 0;
+    transition: all 1s;
+    opacity: 0;
+}
+.team-icone ul {
+    list-style: none;
+    display: flex;
+    transform: translateX(-8%);
+}
+.team-icone ul li{
+    padding: 0 15px;
+    color: #FFF;
+}
+.team-text:hover > .team-icon-img .team-icone{
+    opacity: 1;
+}
+.team-footer button { 
+    border: none;
+    outline: none;
+    width: 150px;
+    height: 50px;
+    padding: 15px 11px;
+    background-color: #F25454;
+    border-radius: 10px;
+    color: #FFF;
+}
+.services-icone:hover > span{
+    color:#F25454
+}
+#services{
+    background-color: #FAFAFA;
+}
+.nav-tabs {
+    display: flex;
+    border: none;
+}
+.nav-tabs .nav-link{
+    border: none;
+    width: 20%;
+    margin: 50px  0;
+    padding: 0;
+}
+
+.nav-link img {
+    opacity: .5;
+}
+.active img{
+    transform: scale(2,2);
+    transition: .8s;
+    opacity: 1;
+
+}
+.active{
+    order: -1;
+}
+.tab-pane p{
+    position: relative;
+}
+.tab-pane p::after{
+    content: ' " ';
+    position: absolute;
+    left: 0;
+    top: 0;
+    color: #000;
+    font-size: 40px;
+}
+.tab-pane p::before{
+    content: ' " ';
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    font-size: 40px;
+    color: #000;
+}
+form input{
+    margin: 20px 0;
+    width: 100%;
+    padding: 10px 5px;
+    display: block;
+    outline:none;
+}
+footer{
+    position: relative;
+    background-image: url(../images/23_n.jpg);
+    background-size: 100% 100%;
+    margin-top: 50px ;
+}
+.footer-icone{
+    width:50px;
+    height: 50px;
+    position: absolute;
+    border-radius: 50%;
+    background-color: rgba(245, 2, 2, 0.6);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+.footer-icone i {
+    font-size: 25px;
+    color: #FFF;
+}
+.logo-icon{
+    width: 100%;
+    padding: 35px 0;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+}
+.icon-list ul {
+    list-style: none;
+    padding: 0;
+}
+.icon-list ul li{
+    padding: 3px 0;
+}
+.icon-list ul li:hover {
+    color: #F25454;
+    cursor: pointer;
+}
+.pop a {
+    padding: 3px 15px;
+    text-decoration: none;
+    color: #FFF;
+    border: 1px solid #FFF;
+    border-radius: 10px;
+}
+.pop a:hover{
+    border-color: #F25454;
+    color: #F25454;
+}
+.pop div{
+    margin: 15px 0;
+}
+.copy{
+    background-color:#1A1A1A;
+}
+.copy ul {
+    list-style: none;
+    align-items: center;
+    display: flex;
+}
+.copy ul li i {
+    padding: 0 10px ;
+    color: #FFF;
+}
+.copy ul li i:hover{
+    color:#F25454
+}
+.down{
+    width:30px;
+    height:50px;
+    border:1px solid #FFF;
+    border-radius: 10px;
+    position :absolute;
+    bottom:10px;
+    left:50%;
+    transform:translateX(-50%s);
+    display: flex;
+    justify-content:center
+}
+.ball{
+    position: relative;
+}
+.down .white-ball{
+    position: absolute;
+    width: 10px;
+height: 10px;
+border-radius: 50%;
+background-color: #FFF;
+left: 50%;
+transform: translateX(-50%);
+top: 0;
+animation-name: move-ball;
+animation-duration: 4s;
+animation-iteration-count: infinite;
+}
+@keyframes background-change {
+    0%{background-image: url(../images/slideshow-1.jpg);}
+    10%{background-image: url(../images/slideshow-1.jpg);}
+    20%{background-image: url(../images/slideshow-2.jpg);}
+    30%{background-image: url(../images/slideshow-2.jpg);}
+    40%{background-image: url(../images/slideshow-3.jpg);}
+    50%{background-image: url(../images/slideshow-3.jpg);}
+    60%{background-image: url(../images/slideshow-1.jpg);}
+    70%{background-image: url(../images/slideshow-1.jpg);}
+    80%{background-image: url(../images/slideshow-2.jpg);}
+    90%{background-image: url(../images/slideshow-2.jpg);}
+    100%{background-image: url(../images/slideshow-3.jpg);}
+}
+@keyframes move-ball {
+    0%{top:0; opacity: 1;}
+    25%{top:10;opacity: .8;}
+    50%{top: 20;opacity: .3;}
+    75%{top: 10;opacity: .8;}
+    75%{top: 0;opacity: 1;}
+}
+@media (max-width:800px) {
+    .navs{
+        background-color: #FFF;
+        padding: 0 !important;
+    }
+    .nav-item .nav-link{
+        color:#000 !important
+    }
+    .logo{
+        display: none;
+    }
+}
